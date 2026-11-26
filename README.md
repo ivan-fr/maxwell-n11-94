@@ -1,6 +1,7 @@
 # Maxwell's Electrostatic Conjecture: $M^+(11) \ge 94$ and $M^+(2k+1) \ge 20k - 6$
 
 [![Certified Rust Proof CI](https://github.com/ivan-fr/maxwell-n11-94/actions/workflows/ci.yml/badge.svg)](https://github.com/ivan-fr/maxwell-n11-94/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24556743.svg)](https://doi.org/10.5281/zenodo.24556743)
 
 **Certified Pure-Rust Proof via `pandsysroots 0.34.0` and Pandrosion V31 Order-4 Projective Radical Enclosures**
 
