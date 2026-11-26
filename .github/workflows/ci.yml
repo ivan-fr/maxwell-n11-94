@@ -1,0 +1,19 @@
+name: Certified Rust Proof CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Run full 512-bit Pandrosion V31 + Krawczyk + pandsysroots 0.34.0 certification
+        run: |
+          cargo test --release -- --nocapture
+          cargo run --release
